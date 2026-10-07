@@ -1,0 +1,6 @@
+{
+  "name": "المنصة الوطنية للتبليغ وتوثيق الانتهاكات بحق الحيوان في سوريا",
+  "description": "المنصة الوطنية للتبليغ وتوثيق الانتهاكات بحق الحيوان في سوريا - Hema Animal Protection, Rescue & Adoption across Syria.",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
