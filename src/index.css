@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cairo: 'Cairo', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Cairo', sans-serif;
+  }
+
+  body {
+    background-color: #FDFCF9;
+    color: #2D2D2D;
+  }
+
+  body[dir="rtl"] {
+    font-family: 'Cairo', sans-serif;
+  }
+
+  body[dir="ltr"] {
+    font-family: 'Plus Jakarta Sans', 'Cairo', sans-serif;
+  }
+}
+
+/* Custom Leaflet Map Adjustments */
+.leaflet-container {
+  font-family: inherit !important;
+  z-index: 10;
+  background-color: #F5F2ED !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 14px;
+  border: 1px solid #E5E1D8;
+  box-shadow: 0 10px 25px -5px rgba(91, 77, 63, 0.12), 0 8px 10px -6px rgba(91, 77, 63, 0.08);
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.5;
+}
+
+/* Pulse animation for critical cases */
+@keyframes pulse-emergency {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.85;
+  }
+}
+
+.animate-pulse-emergency {
+  animation: pulse-emergency 1.8s infinite ease-in-out;
+}
+
+
